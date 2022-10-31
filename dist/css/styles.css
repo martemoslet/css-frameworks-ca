@@ -7,8 +7,8 @@
  */
 :root {
   --bs-blue: #550ea6;
-  --bs-indigo: #5D2BCC;
-  --bs-purple: #6f42c1;
+  --bs-indigo: #7846e2;
+  --bs-purple: #ddd1f7;
   --bs-pink: #d63384;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
@@ -10775,10 +10775,20 @@ textarea.form-control-lg {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.navbar-brand {
+.navbar-brand,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
   font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: 700;
   font-size: 2rem;
+}
+
+.navbar-brand,
+.social-header {
+  font-weight: 700;
 }
 
 .profile-img {
@@ -10790,12 +10800,26 @@ textarea.form-control-lg {
 
 .wall-post {
   height: 120px;
-  border: transparent;
+  border: solid 1px;
 }
 
 .user-img {
   width: 50px;
   height: 50px;
+}
+
+.card-header {
+  background-color: #7846e2;
+  color: white;
+}
+
+.card {
+  border: none;
+}
+
+.fas:hover {
+  color: #550ea6;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
