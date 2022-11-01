@@ -2,16 +2,21 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/bootstrap/scss/functions";
 
-* {
-    font-family: 'Montserrat', Verdana, Geneva, Tahoma, sans-serif;
+:root {
+    --bs-body-font-family: 'Montserrat', Verdana, Tahoma, sans-serif;
 }
 
 .navbar-brand,
 h1,
 h2,
 h3 {
-    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', Verdana, Tahoma, sans-serif;
     font-size: 2rem;
+}
+
+h2,
+h3 {
+    font-size: 1.6rem;
 }
 
 .navbar-brand,
@@ -49,3 +54,5 @@ h3 {
     color: $primary;
     cursor: pointer;
 }
+
+
