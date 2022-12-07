@@ -8,6 +8,8 @@ const method = "post";
 export async function createPost(postData) {
     const createPostURL = API_SOCIAL_URL + action;
 
+    postData.tags = postData.tags.split(",");
+
     const response = await authFetch(createPostURL, {
         method,
         body: JSON.stringify(postData)

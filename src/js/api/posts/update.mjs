@@ -11,6 +11,7 @@ export async function updatePost(postData) {
     }
     const updatePostURL = `${API_SOCIAL_URL}${action}/${postData.id}`;
 
+    postData.tags = postData.tags.split(",");
 
     const response = await authFetch(updatePostURL, {
         method,
