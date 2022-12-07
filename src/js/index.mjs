@@ -4,6 +4,8 @@ import * as postMethods from "./api/posts/index.mjs"
 
 const path = location.pathname;
 
+console.log(path)
+
 if (path === '/profile/login/') {
     listeners.setLoginFormListener()
 } else if (path === '/profile/register/') {
@@ -12,16 +14,17 @@ if (path === '/profile/login/') {
     listeners.setCreatePostFormListener()
 } else if (path === '/post/edit/') {
     listeners.setUpdatePostListener()
+} else if (path === '/profile/edit/') {
+    listeners.setUpdateProfileListener()
 }
 
+//async function testTemplate() {
+  //  const posts = await postMethods.getPosts();
+    //const container = document.querySelector("#posts");
+    //templates.renderPostTemplates(posts, container);
+//}
 
-// async function testTemplate() {
-   // const posts = await postMethods.getPosts();
-    // const container = document.querySelector("#post");
-    // templates.renderPostTemplates(posts, container);
-// }
-
-// testTemplate()
+//testTemplate()
 
 // post.createPost()
 // post.updatePost()
