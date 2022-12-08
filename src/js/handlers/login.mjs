@@ -9,6 +9,7 @@ export function setLoginFormListener() {
       const form = event.target;
       const formData = new FormData(form);
       const profile = Object.fromEntries(formData.entries());
+      window.location.href = "../../../posts/index.html"
 
       // Send it to the API
       login(profile);
