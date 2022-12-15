@@ -1,3 +1,5 @@
+import { postContainer } from "./postContainer.mjs"
+
 export function postTemplateA(postData) {
     return `<div class="post" id=${postData.id}>${postData.title}</div>`
 }
@@ -6,6 +8,7 @@ export function postTemplateB(postData) {
     const post = document.createElement("div");
     post.classList.add("post");
     post.innerText = postData.title;
+    post.innerText = postData.body;
 
     if (postData.media) {
         const img = document.createElement('img');
@@ -18,10 +21,10 @@ export function postTemplateB(postData) {
 }
 
 export function renderPostTemplate(postData, parent) {
-   // parent.innerHTML += postTemplateA(postData)
-   parent.append(postTemplateB(postData))
+   parent.innerHTML += postContainer(postData)
+   // parent.append(postTemplateB(postData))
 }
 
 export function renderPostTemplates(postDataList, parent) {
-    parent.append(...postDataList.map(postTemplateB))
+    postDataList.map(post => renderPostTemplate(post, parent))
 }

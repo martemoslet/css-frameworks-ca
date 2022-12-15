@@ -5,6 +5,8 @@ export async function postFeed () {
     const posts = await readPosts.getPosts();
     const container = document.querySelector("#posts");
     templates.renderPostTemplates(posts, container);
+    templates.postContainer(posts, container); 
+    
 }
 
 postFeed()
