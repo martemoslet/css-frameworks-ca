@@ -25,6 +25,7 @@ export async function setUpdatePostListener() {
       const formData = new FormData(form);
       const post = Object.fromEntries(formData.entries());
       post.id = id;
+      alert("Post updated");
 
       // Send it to the API
       updatePost(post);
