@@ -19,5 +19,8 @@ export default function router() {
         case '/profile/edit/':
             listeners.setUpdateProfileListener()
             break;
+        case '/post/':
+            listeners.setRemovePostListener()
+            break;
     }
 }
