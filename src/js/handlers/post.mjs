@@ -8,7 +8,6 @@ export async function onePost() {
     const post = await getPost(id);
     const container = document.querySelector("#post");
     template.renderPostTemplate(post, container);
-    console.log(post);
     
 }
 
