@@ -19,5 +19,9 @@ export async function getProfile(name) {
 
     const response = await authFetch(getProfileURL)
 
-    return await response.json();
+    const userProfile = await response.json()
+
+    return userProfile;
+
+    //return await response.json();
 }
