@@ -12,15 +12,14 @@ export default function router() {
             break;
         case '/posts/':
             listeners.setCreatePostFormListener()
+            listeners.setupSearch()
             break;
         case '/post/edit/':
             listeners.setUpdatePostListener()
+            listeners.setRemovePostListener()
             break;
         case '/profile/edit/':
             listeners.setUpdateProfileListener()
-            break;
-        case '/post/':
-            listeners.setRemovePostListener()
             break;
     }
 }
