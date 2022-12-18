@@ -2,7 +2,6 @@ import router from "./router.mjs";
 import * as storage from "./storage/index.mjs"
 import { getProfile } from "./api/profiles/index.mjs"
 import * as templates from "./templates/index.mjs"
-//import { setupSearch } from "./search/index.mjs";
 
 const profile = storage.load("profile");
 
@@ -13,5 +12,3 @@ async function userProfile() {
     templates.userProfileTemplate(userName);
 }
 userProfile()
-
-//setupSearch()
