@@ -1,6 +1,11 @@
 import { API_SOCIAL_URL } from "../constants.mjs";
 import * as storage from "../../storage/index.mjs";
 
+/**
+ * This will log in the user and save the access token
+ * @param {object} profile is the profile information
+ */
+
 const action = "/auth/login";
 const method = "post";
 

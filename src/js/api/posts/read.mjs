@@ -4,6 +4,10 @@ import { authFetch } from "../authFetch.mjs";
 
 const action = "/posts";
 
+/**
+ * This function will get the latest 100 posts from the API
+ */
+
 export async function getPosts() {
     const updatePostURL = `${API_SOCIAL_URL}${action}${author}`;
 

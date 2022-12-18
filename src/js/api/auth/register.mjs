@@ -1,5 +1,10 @@
 import { API_SOCIAL_URL } from "../constants.mjs";
 
+/**
+ * This will register the user
+ * @param {object} profile is the profile information
+ */
+
 const action = "/auth/register";
 const method = "post";
 
