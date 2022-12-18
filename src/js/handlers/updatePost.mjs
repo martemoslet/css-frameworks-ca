@@ -35,9 +35,6 @@ export async function setUpdatePostListener() {
       alert("Post updated");
       await updatePost(post);
       location.href = "/posts/";
-
-      // Send it to the API
-      updatePost(post);
     });
   }
 }

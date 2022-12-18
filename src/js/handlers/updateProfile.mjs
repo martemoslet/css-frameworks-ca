@@ -36,9 +36,6 @@ export async function setUpdateProfileListener() {
       alert("Profile updated");
       await updateProfile(profile);
       location.href = "/profile/";
-
-      // Send it to the API
-      updateProfile(profile);
     });
   }
 }

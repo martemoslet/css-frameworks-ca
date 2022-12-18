@@ -17,8 +17,6 @@ export function setCreatePostFormListener() {
       await createPost(post);
       location.href = "/posts/";
 
-      // Send it to the API
-      createPost(post)
     })
   }
 }

@@ -32,5 +32,4 @@ export async function getProfile(name) {
 
     return userProfile;
 
-    //return await response.json();
 }

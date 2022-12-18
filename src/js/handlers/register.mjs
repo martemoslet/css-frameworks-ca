@@ -15,9 +15,6 @@ export function setRegisterFormListener() {
             const profile = Object.fromEntries(formData.entries())
             await register(profile);
             location.href = "/posts/";
-                
-            // Send it to the API
-            register(profile)
         })
     }
 }

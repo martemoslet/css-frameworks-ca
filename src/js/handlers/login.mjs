@@ -17,8 +17,6 @@ export function setLoginFormListener() {
       await login(profile);
       location.href = "/posts/";
 
-      // Send it to the API
-      login(profile);
     });
   }
 }

@@ -14,7 +14,7 @@ export async function removePost(id) {
     if (!id) {
         throw new Error("Deleting requires a postID");
     }
-    //const updatePostURL = `${API_SOCIAL_URL}${action}/${id}`;
+
     const removePostURL = `${API_SOCIAL_URL}${action}/${id}${author}`;
 
 

@@ -17,7 +17,6 @@ export function setRemovePostListener() {
         await removePost(id);
         location.href = "/posts/";
 
-        removePost(id);
       })
     } 
   }
