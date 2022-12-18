@@ -2,6 +2,11 @@ import { getProfile, updateProfile } from "../api/profiles/index.mjs";
 
 import { load } from "../storage/index.mjs";
 
+/**
+ * This function will update the profile information of the user
+ * The button is disabled until the form has loaded
+ */
+
 export async function setUpdateProfileListener() {
   const form = document.querySelector("#editProfile");
 

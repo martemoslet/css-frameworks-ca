@@ -7,6 +7,11 @@ const profile = storage.load("profile");
 
 router();
 
+/**
+ * This function creates the profile taking the users
+ * data into the profile template
+ */
+
 async function userProfile() {
     const userName = await getProfile(`${profile.name}`);
     templates.userProfileTemplate(userName);

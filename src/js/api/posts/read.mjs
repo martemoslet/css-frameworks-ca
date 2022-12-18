@@ -16,6 +16,11 @@ export async function getPosts() {
     return await response.json();
 }
 
+/**
+ * This function will get a specific post using its id
+ * @param {object} id is the id of the post chosen
+ */
+
 export async function getPost(id) {
     if (!id) {
         throw new Error("Get post requires a postID");

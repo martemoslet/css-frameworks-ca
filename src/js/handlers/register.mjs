@@ -1,5 +1,9 @@
 import { register } from "../api/auth/register.mjs";
 
+/**
+ * This function will register the user profile
+ */
+
 export function setRegisterFormListener() {
     const form = document.querySelector("#registerForm");
 

@@ -1,5 +1,12 @@
 const profileContainer = document.querySelector("#user-profile");
 
+/**
+ * This function is a template for how the users profile
+ * will look like on the page
+ * @param {object} profile contains the users data
+ * @returns 
+ */
+
 export function userProfileTemplate(profile) {
     if(profileContainer) {
         return profileContainer.innerHTML +=

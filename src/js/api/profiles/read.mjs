@@ -3,6 +3,10 @@ import { authFetch } from "../authFetch.mjs";
 
 const action = "/profiles";
 
+/**
+ * This will retrieve profile information
+ */
+
 export async function getProfiles() {
     const updateProfileURL = `${API_SOCIAL_URL}${action}`;
 
@@ -10,6 +14,11 @@ export async function getProfiles() {
 
     return await response.json();
 }
+
+/**
+ * This will retrieve profile information from a specific user
+ * @param {string} name this is the specific user
+ */
 
 export async function getProfile(name) {
     if (!name) {

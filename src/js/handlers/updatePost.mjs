@@ -1,5 +1,12 @@
 import { getPost, updatePost } from "../api/posts/index.mjs";
 
+/**
+ * This function will update a specific post using its id.
+ * The id is found through the URL, and displays the title,
+ * body, tags and media of the post. The button is disabled 
+ * until the post is loaded
+ */
+
 export async function setUpdatePostListener() {
   const form = document.querySelector("#editPost");
 

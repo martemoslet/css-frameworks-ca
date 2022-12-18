@@ -1,3 +1,10 @@
+/**
+ * This function is a template for how a single post
+ * will look like on the page
+ * @param {object} postData is the data retrieved from the posts
+ * @returns 
+ */
+
 export function singlePostContainer(postData) {
     return `
     <div class="container col-12 col-md-7 col-lg-6 mt-3 mb-3">
