@@ -20,7 +20,7 @@ export async function setUpdateProfileListener() {
 
     button.disabled = false;
 
-    form.addEventListener("submit", (event) => {
+    form.addEventListener("submit", async (event) => {
       event.preventDefault();
       const form = event.target;
       const formData = new FormData(form);
@@ -28,6 +28,9 @@ export async function setUpdateProfileListener() {
 
       profile.name = name;
       profile.email = email;
+      alert("Profile updated");
+      await updateProfile(profile);
+      location.href = "/profile/";
 
       // Send it to the API
       updateProfile(profile);
