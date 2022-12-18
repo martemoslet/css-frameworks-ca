@@ -12,7 +12,7 @@ export default function router() {
             break;
         case '/posts/':
             listeners.setCreatePostFormListener()
-            listeners.setupSearch()
+            //listeners.setupSearch()
             break;
         case '/post/edit/':
             listeners.setUpdatePostListener()

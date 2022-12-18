@@ -6,3 +6,5 @@ export * from "./updateProfile.mjs";
 export * from "./posts.mjs"
 export * from "./post.mjs"
 export * from "./deletePost.mjs"
+export * from "../search/index.mjs"
+
