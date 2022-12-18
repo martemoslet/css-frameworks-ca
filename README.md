@@ -1,6 +1,5 @@
 # Social
-This is the course assignment for JavaScript 2
-The goal is to apply knowledge of JavaScript techniques to implement the front-end functionality for a social media application
+This is the course assignment for JavaScript 2. The goal is to apply knowledge of JavaScript techniques to implement the front-end functionality for a social media application.
 
 ## Build with
 - HTML
