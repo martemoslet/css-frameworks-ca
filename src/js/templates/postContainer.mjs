@@ -1,6 +1,6 @@
 export function postContainer(postData) {
     return `
-    <div class="col-12 col-md-10 col-lg-6 pt-3">
+    <div class="pt-3">
     <a href="/post/?id=${postData.id}">
     <div class="thumbnail">
         <div class="card">
